@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--baseColor);
+    background: var(--baseBackgroud);
+  /* border: 1px solid red;*/
+  
+  
+  }
+
+  :root{ 
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook:     #168ef4;
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear gradient hsl(37, 97% 70%);--instagram-2: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+    --gray:#b9bea7;
+    --cardGray: #f0f3fa
+    --lightGray: #f8f9fe;
+    --card-title: #6f717e;
+    --baseBackground: white;
+    --baseColor: #1d2029;
+    --switchSpinner: #white;
+    --switch: #5f616d;
+  }
+  .wraper {
+    padding: 0 40px;
+  }
+  
+  .grid {
+    display: grid; 
+    grid-row-gap: 28px;
+  }
+
+
+  
+  @media screen and  (min-width: 1024px) {
+    .grid { 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+    h2 {
+      color: var(--gray);
+     }
+  
+   }
+   .header-total {
+    border: none;
+   }
+   .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+  }
+
+  @media screen and  (min-width: 480px) {
+    .grid { 
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+    .wrapper {
+        max-width: 1440px;
+        margin: auto;
+    }
+   }
+  
+   
+   @media screen and  (min-width: 768px) {
+    .grid { 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+   }
+  
+  
+   @media (prefers-color-scheme: dark) {
+    body {
+        background: #1d2029;
+        color: white;
+  
+    }
+   }
+   .is-dark-mode {
+     --cardGray: #252b43;
+    --baseBackground: 1d2029;
+    --baseColor: white;
+    --gray: #8088ad;
+    --lightGray: #1d2029;
+    --cardTitle: #8088ad;
+    --switchSpinner: #282943;
+    --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+   }
+   .is-dark-light {
+    --gray:#b9bea7;
+    --cardGray: #f0f3fa
+    --lightGray: #f8f9fe;
+    --card-title: #6f717e;
+    --baseBackground: white;
+    --baseColor: #1d2029;
+    --switchSpinner: #white;
+    --switch: #5f616d;
+   }
+   :root {
+    --cardGray: #252b43;
+    --baseBackground: 1d2029;
+    --baseColor: white;
+    --gray: #8088ad;
+    --lightGray: #1d2029;
+    --cardTitle: #8088ad;
+    --switchSpinner: #282943;
+    --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+  
+   }
+  
+  
+  
+    
+       
+       
+       
+  
